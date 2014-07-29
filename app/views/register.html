@@ -1,0 +1,37 @@
+<style>
+ .my-form {
+   -webkit-transition:all linear 0.5s;
+   transition:all linear 0.5s;
+   background: transparent;
+ }
+ .my-form.ng-invalid {
+   background: red;
+ }
+</style>
+<form class="form-horizontal" ng-controller="UserController" ng-submit="takeSurvey()">
+    <fieldset>
+        <!-- Form Name -->
+        <legend>Participant Information</legend>
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Name</label>
+            <div class="col-md-4">
+                <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" ng-model="user.name">
+            </div>
+        </div>
+        <!-- Textarea -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textarea">Diet</label>
+            <div class="col-md-4">
+                <textarea class="form-control" id="textarea" name="textarea" placeholder="Describe your eating habits on a weekly bias." ng-model="user.diet"></textarea>
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton"></label>
+            <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit">Take Survey</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

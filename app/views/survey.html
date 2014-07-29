@@ -1,0 +1,18 @@
+<div class='row spacer'>
+    <img class='col-xs-6 col-xs-offset-3' ng-src='{{currentImage.src}}'>
+</div>
+<div class='col-md-6 col-md-offset-3'>
+    <h3>Health : {{rating.health}}</h3>
+    <slider floor="1" ceiling="10" step="1"
+    ng-model="rating.health"></slider>
+</div>
+<div class='col-md-6 col-md-offset-3'>
+    <h3>Taste : {{rating.taste}}</h3>
+    <slider floor="1" ceiling="10" step="1" ng-model="rating.taste"></slider>
+</div>
+<div class='col-md-6'>
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary btn-lg" ng-click="nextImage()">Next</button>
+</div>
+<div class='col-md-6'>
+    <button id="singlebutton" name="singlebutton" class="btn btn-success btn-lg" ng-click="done()">Done</button>
+</div>
