@@ -10,11 +10,7 @@
     "type": "git",
     "url": "git://github.com/vbudhram/food-photo-survey.git"
   },
-  "keywords": [
-    "food",
-    "photo",
-    "survey"
-  ],
+  "keywords": ["food", "photo", "survey"],
   "author": "Vijay Budhram",
   "license": "MIT",
   "bugs": {
@@ -23,6 +19,11 @@
   "homepage": "https://github.com/vbudhram/food-photo-survey",
   "dependencies": {
     "express": "^4.7.1",
-    "body-parser": "^1.5.2"
+    "body-parser": "^1.5.2",
+    "bower": "0.6.x"
+
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
   }
 }
