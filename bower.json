@@ -12,6 +12,6 @@
     "venturocket-angular-slider": "~0.3.2"
   },
   "resolutions": {
-    "angular": "1.2.10",
+    "angular": "1.2.10"
   }
 }
