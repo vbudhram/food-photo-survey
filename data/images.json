@@ -1,0 +1,16 @@
+[{
+    src: 'images/food1.png',
+    weight: 1
+}, {
+    src: 'images/food2.png',
+    weight: 3
+}, {
+    src: 'images/food3.png',
+    weight: 2
+}, {
+    src: 'images/food4.png',
+    weight: 3
+}, {
+    src: 'images/food5.png',
+    weight: 2
+}]

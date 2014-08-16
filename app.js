@@ -20,7 +20,17 @@ app.get('/results', function(req, res) {
         }
         res.json(allResults);
     });
-})
+});
+
+app.get('/load', function(req, res){
+    fs.readFile('/data/images.json', function(err, data){
+        if(err){
+            res.send(400, err);
+        }else{
+            res.json(data);
+        }
+    });
+});
 
 // Save user results
 app.post('/save', function(req, res) {
