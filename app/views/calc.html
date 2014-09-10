@@ -1,0 +1,89 @@
+<form class="form-horizontal" ng-controller="CalcController">
+    <fieldset>
+        <!-- Form Name -->
+        <legend>NRF</legend>
+        <legend>Total : {{total}}</legend>
+        <legend>NRF = (protein g/50 g + fiber g/25 g + vitamin A IU/5000 IU + vitamin C mg/60 mg + vitamin E IU/30 IU + calcium mg/1000 mg + iron mg/18 mg +magnesium mg/400 mg + potassium mg/3500 mg – saturated fat g/20 g – added sugars g/50 g – sodium mg/2400 mg) X 100</legend>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Protein (g)</label>
+            <div class="col-md-4">
+                <input type="number" placeholder="" class="form-control input-md" ng-model="data.protein">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Fiber (g)</label>
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.fiber">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Vitamin A (IU)</label>
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.vita">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Vitamin C (mg)</label>
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.vitc">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Vitamin E (IU)</label>
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.vite">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Calcium C (mg)</label>
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.calcium">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Iron C (mg)</label>
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.iron">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Magnesium (mg)</label>
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.mag">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Potassium (mg)</label>
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.pot">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Saturated Fat (g)</label>
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.sfat">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Added Sugar (g)</label>
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.sugar">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Sodium (mg)</label>
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.sodium">
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-4">
+                <button class="btn btn-primary" ng-click="calc()">Calculate</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

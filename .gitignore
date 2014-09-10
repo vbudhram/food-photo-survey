@@ -25,5 +25,8 @@ build/Release
 node_modules
 bower_components
 
-#Cloud9
+# Cloud9
 .c9
+
+# IntelliJ
+.idea

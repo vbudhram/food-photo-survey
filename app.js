@@ -57,7 +57,11 @@ app.post('/save', function(req, res) {
             res.send(200);
         }
     });
-})
+});
+
+app.get('/calc', function(req, res){
+    res.redirect('/#calc');
+});
 
 var server = app.listen(PORT, function() {
     console.log('Server started on port : ' + PORT);
