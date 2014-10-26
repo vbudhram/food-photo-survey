@@ -14,6 +14,10 @@ app.config(function ($routeProvider, $locationProvider) {
             templateUrl: 'views/calc.html',
             controller: 'CalcController'
         })
+        .when('/calc2', {
+            templateUrl: 'views/calc2.html',
+            controller: 'CalcController'
+        })
         .when('/register', {
             templateUrl: 'views/register.html',
             controller: 'UserController'

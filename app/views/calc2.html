@@ -1,0 +1,104 @@
+<form class="form-horizontal" ng-controller="CalcController">
+    <fieldset>
+        <!-- Form Name -->
+        <legend>NRF</legend>
+        <legend>Total : {{total}}</legend>
+        <legend>NRF = (protein % + fiber % + vitamin A % + vitamin C % + vitamin E % + calcium % + iron % +magnesium % +
+            potassium % – saturated fat % – added sugars % – sodium %) X 100
+        </legend>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Protein %</label>
+
+            <div class="col-md-4">
+                <input type="number" placeholder="" class="form-control input-md" ng-model="data.protein">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Fiber %</label>
+
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.fiber">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Vitamin A %</label>
+
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.vita">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Vitamin C %</label>
+
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.vitc">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Vitamin E %</label>
+
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.vite">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Calcium C %</label>
+
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.calcium">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Iron C %</label>
+
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.iron">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Magnesium %</label>
+
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.mag">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Potassium (mg)</label>
+
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.pot">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Saturated Fat %</label>
+
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.sfat">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Added Sugar %</label>
+
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.sugar">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Sodium %</label>
+
+            <div class="col-md-4">
+                <input type="text" placeholder="" class="form-control input-md" ng-model="data.sodium">
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+
+            <div class="col-md-4">
+                <button class="btn btn-primary" ng-click="calc2()">Calculate</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

@@ -33,7 +33,7 @@ app.controller('SurveyController', ['$scope', '$route', '$routeParams', '$locati
         }
     ];
 
-    var imageIndex = 0
+    var imageIndex = 0;
     $scope.currentImage = $scope.images[imageIndex];
 
     var submitting = false;
@@ -90,6 +90,27 @@ app.controller('CalcController', ['$scope', function ($scope) {
         }catch(e){
             $scope.error = e.message;
         }
-
     };
+
+    $scope.calc2 = function(){
+        try{
+            var protein = parseFloat($scope.data.protein) / 100;
+            var fiber = parseFloat($scope.data.fiber) / 100;
+            var vita = parseFloat($scope.data.vita) / 100;
+            var vitc = parseFloat($scope.data.vitc) / 100;
+            var vite = parseFloat($scope.data.vite) / 100;
+            var calcium = parseFloat($scope.data.calcium ) / 100;
+            var iron = parseFloat($scope.data.iron) / 100;
+            var mag = parseFloat($scope.data.mag) / 100;
+            var pot = parseFloat($scope.data.pot) / 100;
+            var sfat = parseFloat($scope.data.sfat) / 100;
+            var sugar = parseFloat($scope.data.sugar) / 100;
+            var sodium = parseFloat($scope.data.sodium) / 100;
+
+
+            $scope.total = (protein + fiber + vita + vitc + vite + calcium + iron + mag + pot - sfat - sugar - sodium) * 100;
+        }catch(e){
+            $scope.error = e.message;
+        }
+    }
 }]);

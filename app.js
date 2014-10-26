@@ -59,9 +59,13 @@ app.post('/save', function(req, res) {
     });
 });
 
-app.get('/calc', function(req, res){
-    res.redirect('/#calc');
-});
+//app.get('/calc', function(req, res){
+//    res.redirect('/#calc');
+//});
+//
+//app.get('/calc2', function(req, res){
+//    res.redirect('/#calc2');
+//});
 
 var server = app.listen(PORT, function() {
     console.log('Server started on port : ' + PORT);
